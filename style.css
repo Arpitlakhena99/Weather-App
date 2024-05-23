@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    background: center / cover no-repeat url('https://source.unsplash.com/random/900x700/?weather');
+}
+.card {
+    background-color: rgba(8, 8, 8, 0.664);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    text-align: center;
+}
+button {
+    margin: 0.5rem;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(128, 126, 126, 0.425);
+    cursor: pointer;
+    border-style: none;
+    outline-style: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    animation: ayesha;
+    outline: visible;
+}
+
+@keyframes ayesha {
+    0% {
+        outline: visible;
+    }
+
+    50% {
+        outline: hidden;
+    }
+
+    100% {
+        outline: visible;
+    }
+}
+
+.search-bar {
+    height: 36px;
+    width: 200px;
+    border-radius: 30px;
+    outline-style: none;
+    border-style: none;
+    background-color: rgba(128, 126, 126, 0.425);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after{
+ visibility: visible;
+ content: "Loading....";
+ color: white;
+ position: absolute;
+ top: 0;
+}
